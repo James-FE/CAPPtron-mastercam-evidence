@@ -681,8 +681,8 @@
   },
   {
     "path": "stage2-handoff.txt",
-    "bytes": 11822,
-    "sha256": "3716669d6fcd80c0b3c1326ae4e6b4bf75d486a6be5825cd303ce252b429967e"
+    "bytes": 12108,
+    "sha256": "9ec7c8f34915be1f85573b33d20c975962f52f13e56a8f5810b05ae83a675c41"
   },
   {
     "path": "stock-probes-ipc.json",
@@ -1933,5 +1933,10 @@
     "path": "origin-save-check/saveas-save.txt",
     "bytes": 167,
     "sha256": "35559550ccbd4212d42198d77ce3e01d1d9c52f6a18f8f6c1178bf134a1e8a09"
+  },
+  {
+    "path": "stock-source-correction.txt",
+    "bytes": 4393,
+    "sha256": "8e6b0ac456e9fecf5af54f21c7d69a2cee1e1f9af8b8acf15bf189f7e0dedc9b"
   }
 ]

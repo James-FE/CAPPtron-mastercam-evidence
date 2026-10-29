@@ -1,3 +1,5 @@
+【毛坯结论修订】请先读 stock-source-correction.txt：43/38/100仅为机床定义树组件回读值，尚未确认是当前加工/仿真有效毛坯；用户确认最新七工序使用无孔毛坯。此前称实际毛坯的措辞证据不足，不得将其作为新基准。
+
 第二阶段现场校验交接报告 — Mastercam 2026 本机能力调查
 日期：2026-10-29（Asia/Shanghai）
 上游跟踪：https://github.com/cosmic-snail/CAPPtron-core/issues/184（已提交，关联#146/#135）

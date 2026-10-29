@@ -1,0 +1,38 @@
+毛坯来源与有效性复核修订 — 2026-10-29
+
+本修订优先于此前 README、stage2-handoff、summary/results 及 issue 快照中将43/38/100称作“实际毛坯”的表述。该数仅为机床定义树组件回读值，当前有效毛坯配置未核实。
+
+用户工程依据：最新七工序 Golden-B7 使用无孔毛坯，新增钻孔；旧六工序使用有孔毛坯。这是本次核对的用户确认事实。本轮不另行推定有效外径或长度。
+
+1. 文件身份
+本次重新只读计算原件和 evidence/baseline.mcam 的SHA256，二者均为
+7c279238996e717f43dc20ff69f055edae75cad281344f636805bb03c3956804。
+原件路径：C:\Users\Caesa\OneDrive\Desktop\大连理工\机械加工代码生成项目\加工指导\环3D零件\圆环_Golden-B7_钻孔已验证_20261022.mcam。
+已有 baseline-identity.json 记录宿主文件路径为本证据目录baseline.mcam，metric=true，工序ID为[1,8,2,3,4,5,6]。
+closure/component-tests.csx 对每项执行 File.Copy(root/baseline.mcam, closure/component-*/test.mcam)，检查 FileManager.Open(false,path) 返回成功后才采样。before-ops.json 同样包含七工序及ID8。
+这些证据支持“测试输入来自指定七工序文件”，没有证据表明误用了旧六工序输入。
+
+限制：组件采样文本没有逐次记录CurrentFileName和打开后输入SHA，也没有把复制前SHA写进每项日志。现存test.mcam是在Save后文件，不能用它当前字节相等证明复制瞬间身份。来源由脚本、Open成功条件和前置七工序回读联合支持，不能夸大为逐项完整身份审计。
+
+2. 读到的对象
+ReadMachine先取 GroupsMachineGroup(nullptr)，用其 ogi.pg1.machine_ent_idn、allowFallback=false 初始化 DatabaseStorageController，Read后递归遍历 GetMachine().GetRoot()。
+读到路径为 Default -> Left Spindle Group -> Lathe Left Spindle C Axis -> Lathe Chuck -> stock，type33，能转换IStockComponent与ICylinderParametricGeometry。
+该对象radius21.5、innerRadius19、length100、base[0,0,0]、axis[-1,0,0]，据此组件几何换算外径43/内径38/长度100 mm。
+探针没有记录machine_ent_idn实际数值、组件唯一标识、选中/启用状态、关联操作或仿真初始毛坯选择；遍历类型匹配不构成“当前消费者采用该毛坯”的证据。
+
+3. 矛盾与未解决项
+同一测试的旧组stock_def读回150/0/150、holeInStock=false，边界引用[89,0]，display=true。边界89有4条线，原始径向坐标19000..21500；其缩放单位和当前有效性没有核实。
+因此同一七工序文件中确有互相矛盾的毛坯相关记录。组件树/边界可能是旧配置残留，可能属于不同消费者，或探针选择了不适用的对象；现有证据不能区分这些解释。
+未实测当前加工/仿真读取哪个记录；未核对stock组件孔启用标志（几何innerRadius本身不证明孔已启用）；也没有证实组件与边界89的唯一绑定关系。
+用户确认无孔，不能因组件innerRadius19便改判成有孔。旧组holeInStock=false也不足以证明其150/0/150是当前有效规格。
+结论：有效毛坯配置仍未解决；43/38/100不作为新基准，不自动改写policy、批准模板或现场输入。
+
+4. 既有能力结论的准确范围
+旧组字段可持久化，但未证明修改了当前有效毛坯。
+MachineDefApi的两种Write对本次读取的机床定义上下文返回Unimplemented；失败事实成立，但不证明该上下文就是当前有效毛坯的正确写入目标，也不证明Mastercam整体不支持毛坯修改。
+零点、进给、工具等独立测试不因本修订被宣称无效；它们同样不能证明毛坯有效配置。
+
+5. 后续最低补证（另行按实现需求执行，本轮未新增宿主调用）
+只对新建隔离副本做只读核对：记录CurrentFileName/副本SHA/七工序，记录组ID、machine_ent_idn、组件唯一ID与孔启用状态；查看Stock Setup/仿真初始毛坯实际选择及来源绑定，区分机床定义模型、车床边界、工序毛坯和仿真毛坯。
+若无法无副作用确认，保留未解决，不能以显示实体或类型名直接认定消费关系。无需为本复核执行再生、仿真计算或后处理。
+本次仅复查历史脚本/日志及重新计算文件哈希，未打开/保存Mastercam文件、未调用CAM、未修改原件。

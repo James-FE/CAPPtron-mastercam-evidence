@@ -4,13 +4,13 @@
 
 ## 从这里开始
 
-1. 阅读 [交接报告](stage2-handoff.txt)。它覆盖早期 summary.txt / results.json 对毛坯成功范围的解释。
+1. 首先阅读 [毛坯来源与有效性修订](stock-source-correction.txt)，再阅读 [交接报告](stage2-handoff.txt)。它覆盖早期 summary.txt / results.json 对毛坯成功范围的解释。
 2. 阅读 [上游跟踪 issue #184](https://github.com/cosmic-snail/CAPPtron-core/issues/184)；本地 issue 正文与提交记录是提交时快照。
 3. 按报告给出的目录复核 before / after / reopened 日志及独立 MCAM 副本。不要把 API 返回成功当作保存成功或制造验收。
 
 ## 核心结论
 
-- 原生组件毛坯回读为外径43、内径38、长度100 mm；旧组记录为150/0/150。旧组写入没有改变实际组件。两种已测官方组件存储 Write 均返回 Unimplemented，不代表所有毛坯接口均不可用。
+- 机床定义树组件几何回读为43/38/100 mm，尚未确认被当前加工或仿真采用；用户确认七工序使用无孔毛坯。旧组记录150/0/150同样不能直接充当有效基准。旧组写入没有改变实际组件。两种已测官方组件存储 Write 均返回 Unimplemented，不代表所有毛坯接口均不可用。
 - 命名平面提交并同步车床组及七工序 WCS，可持久化世界 X/Y/Z 原点；应用完整接入尚未完成。
 - 装夹真实夹爪组件缺失，旧夹持长度标量不能证明实物装夹。
 - 进给、CSS模式、余量及正确写回的刀具半径有持久化证据；理论表面质量模式不能等同实际 Ra。

@@ -1,0 +1,22 @@
+2026-10-29 本机隔离能力探针：阶段结果，调查尚未全部完成
+环境：Mastercam 2026 R2；IPC PID7364。原件 SHA256 前后相同。副本来源已核验的七工序 Golden，基准单位公制，工序顺序1,8,2,3,4,5,6。
+源码：probe.cpp, ops-v2.cpp, ops-v3.cpp；构建脚本及三次初始构建日志保留。独立副本及每项before/after/reopened JSON保留。所有Change返回0，SaveAs/New/Open成功；结果不能仅由IPC成功判断。
+接口：GroupsMachineGroup(nullptr)，op_group.ogi.pg3.stock_def[0]，Cnc::OpMgr::OpGroupsAPI::UpdateGroup(const op_group&) -> const op_group*（失败返回null）；声明来源SDK interfaces/GUI/OpGroupsAPI_CH.h:520，链接Mastercam.lib；读取组链接MCMachineDef.lib。
+工序接口：operation_manager(operation*, OPMGR_GET/OPMGR_REWRITE, DB_LIST_ENT_PTR*, bool*)，实际探针调用见源码。宿主内CSX经P/Invoke调用，无独立进程内存写入。
+毛坯：外径150->145 mm，长度150->140 mm，预孔0->10 mm且holeInStock=true，三项各自独立副本同会话及重开均保持。refZ=0,refAtMaxZ=true,useMargins=true,margins=[0,0,0,0.5]保持。右主轴槽位虽有默认值但boundaryIds=[0,0]，不能视为实际毛坯。
+毛坯边界ID89没有改变。只证明原生组参数持久化；尚未验证边界几何、机床毛坯组件或仿真是否消费修改。不能把该结果说成整个有效毛坯已更新。
+装夹：chuck_def[0].gripLength 25->24 mm持久化。未证明夹爪已启用、几何或仿真已改变；三爪/筒夹映射及伸出长度未验证。插件setup_snapshot原生读取此字段，但应用现场fixture-type/grip-length/extension-length映射仍待核实。
+偏置：仅工序3（opcode61，slot4，刀号1，toolSlot1）WCS.woff_n -1->2持久化。编号与G54等代码的对应关系未验证，不涉及控制器偏置数值。
+零点反例：同工序WCS.origin[0] 0->1 mm，同会话成功，重开还原0。m_PlaneID仍为1。该直接写法不能用于工程零点接入；需调查命名平面数据库更新和工序绑定。未验证Y/Z、变换矩阵与车床径向/轴向映射。
+精加工工序3：tl.feed -0.30->-0.25持久化，SDK规定负数为每转进给，本例metric=true,surf_fin_feed=false，解释为0.30->0.25 mm/rev。tl.rpm 295->290持久化，但use_css=true，必须作为恒线速模式字段解释，不能称295 RPM；CSS具体单位尚待UI对照。
+精加工余量：u.prm_lfin.stock_x 0->0.03、stock_z 0->0.04，各自持久化。公制；X余量半径/直径语义仍待核对。插件现有write_parameters只对opcode60包含stock_x/stock_z，不可将粗车映射直接用于61。
+刀具：tl.crad回读0.4 mm，未修改刀具，尚未与ToolNetApi真实装配刀尖半径交叉验证。
+表面质量：SDK BaseToolTypes_CH.h存在surf_fin_feed（feed rate is actually a surface finish）、Lathe/ToolPgBase_LCH.h有OnSurfaceFinishRb。属于明确候选，目标定义、单位、Ra/Rz类型和刀路效果未验证；未启用或设计Ra到进给映射。
+副作用：毛坯/夹持四副本重开后的已采集工序快照与基准逐字相同。全部十项探针均未主动标脏或再生，回读dirty仍false，NCI起止偏移不变。NCI偏移相同不是刀路内容哈希相同；旧刀路不可据此判有效。其他工序字段变化应以results.json全量采集字段核对，未进行完整数据库差分。
+四层结论：原生接口/结构存在，部分字段持久化实测成立；现有插件已读毛坯/WCS/夹持及部分切削参数，已有feed/rpm写入；现场毛坯/setup变更在onsite_v2.py明确阻断，未接入上述写入；原点正确修改、夹具映射、仿真消费及制造确认仍缺。不能总体归因Mastercam做不到，也不能宣称全部接入只差接线。
+后续最小接入：限定原生对象和单位映射，独立工作副本，修改前身份及基准校验，逐字段提交与同会话/重开回读，命名平面正确更新，必要时同步毛坯边界/组件；显式依赖失效与标脏策略，另行审核后再生、仿真、NC审查。保留原件哈希及失败证据。不得移除门禁冒充能力实现。
+工程边界：夹持可靠性、实物确认、控制器偏置、余量可加工性、碰撞覆盖、Ra来源冲突和实测达标均不由持久化解除。
+操作范围：仅证据目录新增源码、脚本、日志和原生副本；未改产品源码、原Golden、策略、批准档案或部署；未请求再生、仿真、后处理或机床操作。当前宿主最后打开finish-rpm.mcam隔离副本。
+未完成：命名平面正确写法、原点Y/Z、夹具类型/伸出、有效仿真毛坯几何验证、CSS精确单位、刀具写入、Ra模式语义、失败/再生状态探针、运行wheel与源码逐文件版本比对。
+
+2026-10-29 correction/follow-up: origin persistence verified using committed named plane + consistent lathe group/operation references. See origin-persistence-conclusion.txt, origin-official-plane and origin-official-group. Earlier raw WCS.origin failure is specific to incomplete update method, not missing Mastercam capability.

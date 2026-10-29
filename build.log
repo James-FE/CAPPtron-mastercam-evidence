@@ -1,0 +1,4 @@
+probe.cpp
+  正在创建库 D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\build\ParameterProbe.lib 和对象 D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\build\ParameterProbe.exp
+level4_native.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) struct op_group const * __cdecl UpdateGroup(struct op_group const &)" (__imp_?UpdateGroup@@YAPEBUop_group@@AEBU1@@Z)，函数 Change 中引用了该符号
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\build\ParameterProbe.dll : fatal error LNK1120: 1 个无法解析的外部命令

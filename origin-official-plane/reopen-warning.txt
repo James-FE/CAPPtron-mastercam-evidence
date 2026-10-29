@@ -1,0 +1,608 @@
+Window: "Mastercam 设计 2026", App: Mastercam.exe.
+	0 窗口 Mastercam 设计 2026 Secondary Actions: Raise
+		2296 对话框 不一致的 WCS 操作 Secondary Actions: Raise
+			2297 文本 机床群组-1 ID: 5344
+			2298 文本 毛坯平面: ID: 5345
+			2299 文本 俯视图 ID: 5346
+			2300 文本 车床组中的 WCS 必须与毛坯平面匹配，否则会出现刀具碰撞避让问题，并且可能生成 NC 代码。 ID: 6739
+			2301 文本 此机床组中操作的 WCS 与群组毛坯平面不匹配。 ID: 6740
+			2302 文本 下面所选的平面将用于更新此机床组的毛坯平面以及此群组中所有操作的 WCS。 ID: 6741
+			2303 列表 下面所选的平面将用于更新此机床组的毛坯平面以及此群组中所有操作的 WCS。 ID: 2010
+				2304 标头 标头控件 ID: Header
+					2305 标头项目 名称 ID: HeaderItem 0
+					2306 标头项目 原点(视图坐标) ID: HeaderItem 1
+				2307 滚动条 (settable, float) 垂直滚动条 Value: 0 ID: NonClientVerticalScrollBar
+					2308 按钮 上一行 ID: UpButton
+					2309 缩略图 位置 ID: ScrollbarThumb
+					2310 按钮 向下翻页 ID: DownPageButton
+					2311 按钮 下一行 ID: DownButton
+				2312 滚动条 (settable, float) 水平滚动条 Value: 0 ID: NonClientHorizontalScrollBar
+					2313 按钮 左移一列 ID: UpButton
+					2314 缩略图 位置 ID: ScrollbarThumb
+					2315 按钮 向右翻页 ID: DownPageButton
+					2316 按钮 右移一列 ID: DownButton
+				2317 缩略图 (disabled)
+				2318 列表项目 (selectable) 俯视图
+					2319 文本 俯视图
+					2320 文本 。要保存更改的结果吗？
+				2321 列表项目 (selectable) 前视图
+					2322 文本 前视图
+					2323 文本 。要保存更改的结果吗？
+				2324 列表项目 (selectable) 后视图
+					2325 文本 后视图
+					2326 文本 。要保存更改的结果吗？
+				2327 列表项目 (selectable) 仰视图
+					2328 文本 仰视图
+					2329 文本 。要保存更改的结果吗？
+				2330 列表项目 (selectable) 右视图
+					2331 文本 右视图
+					2332 文本 。要保存更改的结果吗？
+				2333 列表项目 (selectable) 左视图
+					2334 文本 左视图
+					2335 文本 。要保存更改的结果吗？
+				2336 列表项目 (selectable) 等视图
+					2337 文本 等视图
+					2338 文本 。要保存更改的结果吗？
+				2339 列表项目 (selectable) 反向等视图
+					2340 文本 反向等视图
+					2341 文本 。要保存更改的结果吗？
+				2342 列表项目 (selectable) 不等角视图
+					2343 文本 不等角视图
+					2344 文本 。要保存更改的结果吗？
+				2345 列表项目 (selectable) 车床 Z = 世界 Z
+					2346 文本 车床 Z = 世界 Z
+					2347 文本 。要保存更改的结果吗？
+				2348 列表项目 (selectable) +D+Z
+					2349 文本 +D+Z
+					2350 文本 。要保存更改的结果吗？
+				2351 列表项目 (selectable) 车床左上刀塔
+					2352 文本 车床左上刀塔
+					2353 文本 。要保存更改的结果吗？
+				2354 列表项目 (selectable) 俯视图-车削 X
+					2355 文本 俯视图-车削 X
+					2356 文本 。要保存更改的结果吗？
+				2357 列表项目 (selectable) CAPABILITY_ORIGIN_X2
+					2358 文本 CAPABILITY_ORIGIN_X2
+					2359 文本 。要保存更改的结果吗？
+			2360 按钮 更新 ID: 5349
+			2361 按钮 跳过 ID: 5348
+			2362 按钮 |帮助(H) ID: 9
+			2363 标题栏 (settable, string) Value: 不一致的 WCS 操作
+				2364 按钮 关闭
+		151 窗口 Secondary Actions: Raise ID: GviewAndPlanesManagerOverlayUserControlOverlay
+			152 自定义 ID: GviewAndPlanesManagerOverlayUserControl
+				153 自定义 ID: PlanesManagerOverlayView
+					154 拆分按钮 Description: 创建新平面 ID: CreatePlaneSplitButton
+						155 窗格 ID: ContentArea
+							156 图像
+						157 窗格 ID: IndicatorArea
+					158 按钮 3D Description: 绘图平面 2D/3D ID: 2D3DButton
+						159 文本 3D
+					160 按钮 Description: 设置 ID: SettingsPopupButton
+					161 按钮 Description: 俯视图 ID: GviewPopupButton
+						162 按钮 ID: PART_MainButton
+							163 文本 G: ID: Label
+								164 文本 G:
+						165 按钮 Description: 俯视图 ID: PART_DropDownButton
+					166 按钮 Description: 俯视图 ID: WcsPopupButton
+						167 按钮 ID: PART_MainButton
+							168 文本 WCS: ID: Label
+								169 文本 WCS:
+						170 按钮 Description: 俯视图 ID: PART_DropDownButton
+					171 按钮 Description: 俯视图 ID: CplanePopupButton
+						172 按钮 ID: PART_MainButton
+							173 文本 C: ID: Label
+								174 文本 C:
+						175 按钮 Description: 俯视图 ID: PART_DropDownButton
+					176 按钮 Description: 俯视图 ID: TplanePopupButton
+						177 按钮 ID: PART_MainButton
+							178 文本 T: ID: Label
+								179 文本 T:
+						180 按钮 Description: 俯视图 ID: PART_DropDownButton
+				181 自定义 ID: GviewOverlayPanelView
+					182 自定义 ID: VerticalGviewDoubleButton
+						183 按钮 Description: [单击]以平移。 [Alt+单击] 以旋转。 ID: VerticalFirstButton
+							184 自定义 ID: UpScalingArrowImageControl
+								185 图像
+								186 图像
+						187 按钮 Description: [单击]以平移。 [Alt+单击] 以旋转。 ID: VerticalSecondButton
+							188 自定义 ID: DownScalingArrowImageControl
+								189 图像
+								190 图像
+					191 自定义 ID: HorizontalGviewDoubleButton
+						192 按钮 Description: [单击]以平移。 [Alt+单击] 以旋转。 ID: HorizontalFirstButton
+							193 自定义 ID: LeftScalingArrowImageControl
+								194 图像
+								195 图像
+						196 按钮 Description: [单击]以平移。 [Alt+单击] 以旋转。 ID: HorizontalSecondButton
+							197 自定义 ID: RightScalingArrowImageControl
+								198 图像
+								199 图像
+					200 按钮 Description: [单击] 以将零件翻转 180°。 [Shift+单击] 以将零件翻转 90°。 [Shift+Alt+单击] 以将零件翻转 -90°。 [Ctrl+单击] 以围绕图形视图法线顺时针旋转零件。 [Ctrl+Alt+单击] 以围绕图形视图法线逆时针旋转零件。 ID: FlipRotateButton
+						201 图像
+		202 窗口 Secondary Actions: Raise ID: QuickMaskPanelViewOverlay
+			203 自定义 ID: QuickMaskPanelView
+				204 自定义 ID: PointsSplitToggleButton
+					205 按钮 Description: 选择全部点图素 ID: ActionButton
+					206 按钮 Description: 仅选择点图素
+					207 图像
+				208 自定义 ID: LinesSplitToggleButton
+					209 按钮 Description: 选择全部线图素 ID: ActionButton
+					210 按钮 Description: 仅选择线图素
+					211 图像
+				212 自定义 ID: ArcsSplitToggleButton
+					213 按钮 Description: 选择全部圆弧图素 ID: ActionButton
+					214 按钮 Description: 仅选择圆弧图素
+					215 图像
+				216 自定义 ID: SplinesSplitToggleButton
+					217 按钮 Description: 选择全部曲线图素 ID: ActionButton
+					218 按钮 Description: 仅选择曲线图素
+					219 图像
+				220 自定义 ID: WireframeSplitToggleButton
+					221 按钮 Description: 选择全部线框图素 ID: ActionButton
+					222 按钮 Description: 仅选择线框图素
+					223 图像
+				224 自定义 ID: DraftingSplitToggleButton
+					225 按钮 Description: 选择全部尺寸标注图素 ID: ActionButton
+					226 按钮 Description: 仅选择尺寸标注图素
+					227 图像
+				228 自定义 ID: SurfaceCurvesSplitToggleButton
+				229 自定义 ID: SurfacesSplitToggleButton
+					230 按钮 Description: 选择全部曲面图素 ID: ActionButton
+					231 按钮 Description: 仅选择曲面图素
+					232 图像
+				233 自定义 ID: MeshesSplitToggleButton
+					234 按钮 Description: 选择全部网格图素 ID: ActionButton
+					235 按钮 Description: 仅选择网格图素
+					236 图像
+				237 自定义 ID: SolidsSplitToggleButton
+					238 按钮 Description: 选择全部实体图素 ID: ActionButton
+					239 按钮 Description: 仅选择实体图素
+					240 图像
+				241 自定义 ID: ResultsRoundButton
+					242 按钮 Description: 选择全部结果 ID: ActionButton
+					243 图像
+				244 自定义 ID: GroupsRoundButton
+					245 按钮 Description: 选择全部群组图素 ID: ActionButton
+					246 图像
+				247 自定义 ID: NamedGroupsRoundButton
+					248 按钮 Description: 选择全部命名群组图素 ID: ActionButton
+					249 图像
+				250 自定义 ID: ColorsSplitToggleButton
+					251 按钮 Description: 依照颜色选择全部图素 ID: ActionButton
+					252 按钮 Description: 依照颜色选择图素
+					253 图像
+				254 自定义 ID: LevelsSplitToggleButton
+					255 按钮 Description: 按层别选择全部图素 ID: ActionButton
+					256 按钮 Description: 按层别仅选择图素
+					257 图像
+				258 自定义 ID: AdvancedSplitToggleButton
+					259 按钮 Description: 选择全部高级选项 ID: ActionButton
+					260 按钮 Description: 单一限定选择
+					261 图像
+				262 自定义 ID: ClearSelectionRoundButton
+					263 按钮 Description: 清除选择 ID: FirstButton
+					264 按钮 Description: 清除全部选择
+					265 图像
+		266 窗口 Secondary Actions: Raise ID: GeneralSelectionPanelViewOverlay
+			267 自定义 ID: GeneralSelectionPanelView
+				268 按钮 (disabled) Description: 切换锁定光标点 ID: AutoCursorLockToggleButton
+					269 图像 (disabled) ID: Image_7
+				270 组合框 Description: 光标 ID: AutoCursorComboBox
+				271 按钮 Description: 输入坐标点 ID: AutoCursorFastPointButton
+					272 图像 ID: Image
+				273 按钮 Description: 选择设置 ID: AutoCursorConfigurationButton
+					274 图像 ID: Image
+				275 分隔符 (disabled) ID: Separator_3
+				276 按钮 (disabled) Description: 标准选择 ID: StandardSelectionButton
+					277 图像 (disabled) ID: Image
+				278 按钮 (disabled) Description: 选择实体 ID: SolidSelectionButton
+					279 图像 (disabled) ID: Image
+				280 按钮 (disabled) ID: SelectSolidEdgeButton
+					281 图像 (disabled) ID: Image
+				282 按钮 (disabled) ID: SelectSolidFaceButton
+					283 图像 (disabled) ID: Image
+				284 按钮 (disabled) ID: SelectSolidBodyButton
+					285 图像 (disabled) ID: Image
+				286 按钮 (disabled) ID: SelectSolidFromBackButton
+					287 图像 (disabled) ID: Image
+				288 组合框 Description: 选择方式 ID: SelectionMethodComboBox
+				289 组合框 Description: 选择方式 ID: SelectionModeComboBox
+				290 按钮 (disabled) Description: 临时中心点 ID: TemporaryCenterPointToggleButton
+					291 图像 (disabled) ID: Image
+				292 按钮 Description: 反选 ID: InvertSelectionButton
+					293 图像 ID: Image
+				294 按钮 (disabled) Description: 选择最后 ID: SelectLastButton
+					295 图像 (disabled) ID: Image
+				296 自定义 ID: EndSelectionButton
+					297 按钮 Description: 结束选择 ID: ActionButton
+					298 图像
+				299 自定义 ID: ClearSelectionButton
+					300 按钮 Description: 清除选择 ID: ActionButton
+					301 图像
+		1796 窗格
+		1797 窗格
+		1798 窗格
+		1799 窗格
+		302 滑块 Slider
+		303 自定义 ID: LevelsManagerView
+			304 工具栏 ID: ManagerPanelToolBar
+				305 按钮 Description: 创建新层别 ID: AddLevelButton
+					306 图像
+				307 按钮 Description: 添加群组 ID: AddGroupButton
+					308 图像
+				309 按钮 Description: 从图形查找层别 ID: FindLevelButton
+					310 图像 ID: FindLevelButtonDynamicImage
+				311 按钮 Description: 重设所有层别 ID: ResetAllLevelsButton
+					312 图像
+				313 按钮 Description: 显示选项 ID: DisplayOptionsPopupButton
+					314 图像
+				315 按钮 Description: 开启所有层别 ID: AllLevelsOnButton
+					316 图像 ID: shared:DynamicImage_1
+				317 按钮 Description: 关闭所有层别 ID: AllLevelsOffButton
+					318 图像 ID: shared:DynamicImage_2
+				319 按钮 (disabled) System.Windows.Media.DrawingImage ID: ToolBarOverflowButton
+			320 按钮 Description: 帮助 ID: HelpButton
+				321 图像
+			322 auto-complete box (settable, string) ID: SearchAutoCompleteBox
+				323 编辑 (settable, string) ID: PART_TextBox
+					324 滚动条 (disabled) Value: 0 ID: VerticalScrollBar
+					325 滚动条 (disabled) Value: 0 ID: HorizontalScrollBar
+					326 文本 搜索...
+				327 按钮 ID: clearButton
+				328 按钮 ID: popupButton
+			329 按钮 Description: 排序 ID: SortSplitButton
+				330 按钮 Description: 排序 ID: BasicToggleButton
+					331 图像 ID: SortSplitButtonImage
+				332 按钮 Description: 排序
+			333 按钮 Description: 过滤 ID: FilterPopupButton
+				334 图像
+			335 自定义 ID: LevelsManagerTreeUserControl
+				336 tree list box ID: LevelTreeListBox
+					2365 tree list box item MCCoreBase.ViewModels.Levels.LevelTreeItemViewModel
+						2366 按钮 ID: PART_ExpanderButton
+						2367 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: LevelActiveIconButton
+							2368 图像
+						2369 编辑 (settable, string) Value: 1 ID: PART_TextBox
+						2370 编辑 (settable, string) ID: PART_TextBox
+						2371 文本 10 ID: EntityCountLabel
+							2372 文本 10 ID: EntityCountTextBlock
+						2373 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: IsLevelVisibleButton
+							2374 图像
+						2375 按钮 ID: ContextMenuButton
+							2376 图像 ID: EllipsisImage
+					2377 tree list box item MCCoreBase.ViewModels.Levels.EntitySummaryTreeItemViewModel
+						2378 按钮 ID: PART_ExpanderButton
+						2379 图像 ID: EntitySummaryTreeItemImage
+						2380 文本 线 ID: NameTextBlock
+						2381 文本 7 ID: CountTextBlock
+						2382 图像 ID: HiddenImage
+						2383 按钮 ID: ContextMenuButton
+							2384 图像 ID: EllipsisImage
+					2385 tree list box item MCCoreBase.ViewModels.Levels.EntitySummaryTreeItemViewModel
+						2386 按钮 ID: PART_ExpanderButton
+						2387 图像 ID: EntitySummaryTreeItemImage
+						2388 文本 点 ID: NameTextBlock
+						2389 文本 3 ID: CountTextBlock
+						2390 图像 ID: HiddenImage
+						2391 按钮 ID: ContextMenuButton
+							2392 图像 ID: EllipsisImage
+					2393 tree list box item MCCoreBase.ViewModels.Levels.LevelTreeItemViewModel
+						2394 按钮 ID: PART_ExpanderButton
+						2395 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: LevelActiveIconButton
+							2396 图像
+						2397 编辑 (settable, string) Value: 2 ID: PART_TextBox
+						2398 编辑 (settable, string) ID: PART_TextBox
+						2399 文本 1 ID: EntityCountLabel
+							2400 文本 1 ID: EntityCountTextBlock
+						2401 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: IsLevelVisibleButton
+							2402 图像
+						2403 按钮 ID: ContextMenuButton
+							2404 图像 ID: EllipsisImage
+					2405 tree list box item MCCoreBase.ViewModels.Levels.EntitySummaryTreeItemViewModel
+						2406 按钮 ID: PART_ExpanderButton
+						2407 图像 ID: EntitySummaryTreeItemImage
+						2408 文本 实体 ID: NameTextBlock
+						2409 文本 1 ID: CountTextBlock
+						2410 图像 ID: HiddenImage
+						2411 按钮 ID: ContextMenuButton
+							2412 图像 ID: EllipsisImage
+					2413 tree list box item MCCoreBase.ViewModels.Levels.LevelTreeItemViewModel
+						2414 按钮 ID: PART_ExpanderButton
+						2415 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: LevelActiveIconButton
+							2416 图像
+						2417 编辑 (settable, string) Value: 219 ID: PART_TextBox
+						2418 编辑 (settable, string) ID: PART_TextBox
+						2419 文本 0 ID: EntityCountLabel
+							2420 文本 0 ID: EntityCountTextBlock
+						2421 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: IsLevelVisibleButton
+							2422 图像
+						2423 按钮 ID: ContextMenuButton
+							2424 图像 ID: EllipsisImage
+					2425 tree list box item MCCoreBase.ViewModels.Levels.LevelTreeItemViewModel
+						2426 按钮 ID: PART_ExpanderButton
+						2427 按钮 (disabled) System.Windows.Media.Imaging.TransformedBitmap ID: LevelActiveIconButton
+							2428 图像 (disabled)
+						2429 编辑 (settable, string) Value: 910 ID: PART_TextBox
+						2430 编辑 (settable, string) ID: PART_TextBox
+						2431 文本 5 ID: EntityCountLabel
+							2432 文本 5 ID: EntityCountTextBlock
+						2433 按钮 (disabled) System.Windows.Media.Imaging.TransformedBitmap ID: IsLevelVisibleButton
+							2434 图像 (disabled)
+						2435 按钮 ID: ContextMenuButton
+							2436 图像 ID: EllipsisImage
+					2437 tree list box item MCCoreBase.ViewModels.Levels.LevelTreeItemViewModel
+						2438 按钮 ID: PART_ExpanderButton
+						2439 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: LevelActiveIconButton
+							2440 图像
+						2441 编辑 (settable, string) Value: 3 ID: PART_TextBox
+						2442 编辑 (settable, string) ID: PART_TextBox
+						2443 文本 0 ID: EntityCountLabel
+							2444 文本 0 ID: EntityCountTextBlock
+						2445 按钮 System.Windows.Media.Imaging.TransformedBitmap ID: IsLevelVisibleButton
+							2446 图像
+						2447 按钮 ID: ContextMenuButton
+							2448 图像 ID: EllipsisImage
+				349 自定义 ID: PropertiesAdvancedExpander
+					350 组 ID: RootExpander
+						351 复选框 属性 ID: AdvancedExpanderCheckBox
+						352 文本 属性 ID: HeaderLabel
+							353 文本 属性
+						354 文本
+						355 按钮 ID: HeaderToggle
+						356 自定义 ID: LevelTreeItemParametersUserControl
+							357 文本 编号(U): ID: NumberLabel
+								358 文本 编号(_U):
+							359 组合框 ID: RecentValuesComboBox
+							360 编辑 (settable, string) Value: 0 ID: ValueTextBox
+								361 滚动条 (disabled) Value: 0 ID: VerticalScrollBar
+								362 滚动条 (disabled) Value: 0 ID: HorizontalScrollBar
+							363 按钮 ID: RecentValuesToggleButton
+							364 按钮 ID: IncrementRepeatButton
+							365 按钮 ID: DecrementRepeatButton
+							366 按钮 ID: LockToggleButton
+							367 文本 (disabled) 名称(N): ID: NameLabel
+								368 文本 (disabled) 名称(_N):
+							369 组合框 (disabled) ID: RecentValuesComboBox
+							370 编辑 (disabled, settable, string) ID: ValueTextBox
+								371 滚动条 (disabled) Value: 0 ID: VerticalScrollBar
+								372 滚动条 (disabled) Value: 0 ID: HorizontalScrollBar
+							373 按钮 (disabled) ID: RecentValuesToggleButton
+							374 按钮 (disabled) ID: LockToggleButton
+						375 组
+							376 文本 Hide
+							377 按钮 Description: 显示更多选项 ID: AdvancedToggleButton
+		378 滑块 Slider
+		379 窗格 刀路
+			380 选项卡 (settable, string) Description: ControlPane Value: 刀路 ID: 101
+				381 窗格 Description: ControlPane ID: 59392
+					2449 按钮 (disabled)
+					2450 按钮 (disabled)
+					2451 按钮 (disabled)
+					2452 按钮 (disabled)
+					2453 按钮 (disabled)
+					2454 按钮 (disabled)
+					2455 按钮 (disabled)
+					2456 按钮 (disabled)
+					2457 按钮 (disabled)
+					2458 菜单项 (disabled) Description: BCGPToolbarMenuButton
+					2459 按钮 (disabled)
+					2460 按钮 (disabled)
+				394 窗格 Description: ControlPane ID: 59392
+					2461 按钮 (disabled)
+					2462 按钮 (disabled)
+					2463 按钮 (disabled)
+					2464 按钮 (disabled)
+					2465 菜单项 (disabled) Description: BCGPToolbarMenuButton
+					2466 按钮 (disabled)
+					2467 菜单项 (disabled) Description: BCGPToolbarMenuButton
+					2468 按钮 (disabled)
+					2469 按钮 (disabled)
+					2470 按钮 (disabled)
+					2471 按钮 (disabled)
+					2472 按钮 (disabled)
+				407 树 ID: 197
+					2473 缩略图 (disabled)
+					2474 树项目 (selectable, settable, string) 机床群组-1 Value: 机床群组-1
+						2475 树项目 (selectable, settable, string) 属性 - Lathe Default MM Value: 属性 - Lathe Default MM
+							2476 树项目 (selectable, settable, string) 文件 Value: 文件
+							2477 树项目 (selectable, settable, string) 刀具设置 Value: 刀具设置
+							2478 树项目 (selectable, settable, string) 毛坯设置 Value: 毛坯设置
+						2479 树项目 (selectable, settable, string) 刀具群组-1 Value: 刀具群组-1
+							2480 树项目 (selectable, settable, string) 1 - 车端面 - [WCS: 俯视图] - [刀具面: 车床左上刀塔] Value: 1 - 车端面 - [WCS: 俯视图] - [刀具面: 车床左上刀塔]
+							2481 树项目 (selectable, settable, string) 2 - 车削钻孔 - [WCS: 俯视图] - [刀具面: 车床左上刀塔] Value: 2 - 车削钻孔 - [WCS: 俯视图] - [刀具面: 车床左上刀塔]
+								2482 树项目 (selectable, settable, string) 参数 Value: 参数
+								2483 树项目 (selectable, settable, string) T 0909: 钻孔刀具 - T0909 钻孔 Value: T 0909: 钻孔刀具 - T0909 钻孔
+								2484 树项目 (selectable, settable, string) 图形 Value: 图形
+								2485 树项目 (selectable, settable, string) 刀路 - 8.0K - T.NC - 程序编号 0 Value: 刀路 - 8.0K - T.NC - 程序编号 0
+								2486 树项目 (selectable, settable, string) 更新毛坯 Value: 更新毛坯
+							2487 树项目 (selectable, settable, string)  Value: 
+							2488 树项目 (selectable, settable, string) 3 - 粗车 - [WCS: 俯视图] - [刀具面: 车床左上刀塔] Value: 3 - 粗车 - [WCS: 俯视图] - [刀具面: 车床左上刀塔]
+								2489 树项目 (selectable, settable, string) 参数 Value: 参数
+								2490 树项目 (selectable, settable, string) T 0101: 标准车刀 - OD FINISH RIGHT - 35 DEG. Value: T 0101: 标准车刀 - OD FINISH RIGHT - 35 DEG.
+								2491 树项目 (selectable, settable, string) 几何图形 - (1) 个串连 Value: 几何图形 - (1) 个串连
+								2492 树项目 (selectable, settable, string) 刀路 - 8.9K - T.NC - 程序编号 0 Value: 刀路 - 8.9K - T.NC - 程序编号 0
+								2493 树项目 (selectable, settable, string) 更新毛坯 Value: 更新毛坯
+							2494 树项目 (selectable, settable, string) 4 - 精车 - [WCS: CAPABILITY_ORIGIN_X2] - [刀具面: 车床左上刀塔] Value: 4 - 精车 - [WCS: CAPABILITY_ORIGIN_X2] - [刀具面: 车床左上刀塔]
+								2495 树项目 (selectable, settable, string) 参数 Value: 参数
+								2496 树项目 (selectable, settable, string) T 0101: 标准车刀 - OD FINISH RIGHT - 35 DEG. Value: T 0101: 标准车刀 - OD FINISH RIGHT - 35 DEG.
+								2497 树项目 (selectable, settable, string) 几何图形 - (1) 个串连 Value: 几何图形 - (1) 个串连
+								2498 树项目 (selectable, settable, string) 刀路 - 8.3K - T.NC - 程序编号 0 Value: 刀路 - 8.3K - T.NC - 程序编号 0
+								2499 树项目 (selectable, settable, string) 更新毛坯 Value: 更新毛坯
+							2500 树项目 (selectable, settable, string) 5 - 粗车 - [WCS: 俯视图] - [刀具面: 车床左上刀塔] Value: 5 - 粗车 - [WCS: 俯视图] - [刀具面: 车床左上刀塔]
+							2501 树项目 (selectable, settable, string) 6 - 精车 - [WCS: 俯视图] - [刀具面: 车床左上刀塔] Value: 6 - 精车 - [WCS: 俯视图] - [刀具面: 车床左上刀塔]
+							2502 树项目 (selectable, settable, string) 7 - 车削截断 - [WCS: 俯视图] - [刀具面: 车床左上刀塔] Value: 7 - 车削截断 - [WCS: 俯视图] - [刀具面: 车床左上刀塔]
+				2503 选项卡项目 (selectable) 刀路
+		409 工具栏 Mastercam Description: ControlPane ID: 59399
+			2504 按钮 Application menu
+			2505 工具栏 (settable, string) Quick Access Toolbar Value: Quick Access Toolbar
+				2506 按钮 (disabled) 新建
+				2507 按钮 (disabled) 保存
+				2508 拆分按钮 (disabled) 打开
+				2509 按钮 (disabled) 打印
+				2510 按钮 (disabled) 另存为
+				2511 按钮 (disabled) Zip2Go
+				2512 分隔符 Separator
+				2513 按钮 (disabled) 撤消
+				2514 按钮 (disabled) 重做
+				2515 拆分按钮 自定义快速访问工具栏
+			2516 组 Ribbon Tabs
+				2517 选项卡项目 (selectable) 主页
+				2518 选项卡项目 (selectable) 线框
+				2519 选项卡项目 (selectable) 曲面
+				2520 选项卡项目 (selectable) 实体
+				2521 选项卡项目 (selectable) 模型准备
+				2522 选项卡项目 (selectable) 网格
+				2523 选项卡项目 (selectable) 标注
+				2524 选项卡项目 (selectable) 转换
+				2525 选项卡项目 (selectable) 机床
+				2526 选项卡项目 (selectable) 视图
+				2527 选项卡项目 (selectable) 车削
+				2528 选项卡项目 (selectable) 铣削
+				2529 选项卡项目 (selectable) 木雕刀路
+			2530 按钮 车床
+				2531 选项卡项目 (selectable) 车削
+				2532 选项卡项目 (selectable) 铣削
+				2533 选项卡项目 (selectable) 木雕刀路
+			2534 工具栏 (settable, string) 车削 Value: Group
+				2535 工具栏 (settable, string) 标准 Value: Group
+					2536 列表项目 (selectable) 粗车
+					2537 列表项目 (selectable) 精车
+					2538 列表项目 (selectable) 钻孔
+					2539 列表项目 (selectable) 车端面
+					2540 按钮 (disabled) Row Up
+					2541 按钮 Row Down
+					2542 按钮 (settable, string) 标准车削刀路 Value: 展开刀路列表
+				2543 工具栏 (settable, string) C 轴 Value: Group
+					2544 列表项目 (selectable) 端面外形
+					2545 列表项目 (selectable) C 轴外形
+					2546 列表项目 (selectable) 径向外形
+					2547 列表项目 (selectable) 端面钻孔
+					2548 按钮 (disabled) Row Up
+					2549 按钮 Row Down
+					2550 按钮 (settable, string) C 轴车削刀路 Value: 展开刀路列表
+				2551 工具栏 (settable, string) 零件处理 Value: Group
+					2552 列表项目 (selectable) 毛坯翻转
+					2553 列表项目 (selectable) 同步装夹/拉动/切断
+					2554 列表项目 (selectable) 毛坯调动
+					2555 按钮 (disabled) Row Up
+					2556 按钮 Row Down
+					2557 按钮 (settable, string) 车削零件处理刀路 Value: 展开刀路列表
+				2558 工具栏 (settable, string) 毛坯 Value: Group
+					2559 按钮 (disabled) 毛坯着色切换
+					2560 拆分按钮 (disabled) 显示/隐藏毛坯
+					2561 拆分按钮 (disabled) 毛坯模型
+					2562 按钮 (disabled) 毛坯预览
+				2563 工具栏 (settable, string) 实用程序 Value: Group
+					2564 按钮 (disabled) 车刀管理
+					2565 按钮 (disabled) 刀路转换
+					2566 按钮 (disabled) C 轴视图
+					2567 按钮 (disabled) 与 Z 对齐
+			2568 组合框 功能区模式 Value: 标准
+			2569 按钮 myMastercam
+			2570 按钮 反馈
+			2571 按钮 (disabled) 许可证信息
+			2572 按钮 帮助
+			2573 按钮 最小化功能区 (Ctrl+F1)
+		493 工具栏 Mastercam Description: ControlPane ID: 59399
+			2574 按钮 截面视图: 关闭
+			2575 按钮 选择的图素: 0
+			2576 按钮 X: 47.48307
+			2577 按钮 Y: 28.11846
+			2578 按钮 Z:
+			2579 拆分按钮 0.00000
+			2580 按钮 3D
+			2581 拆分按钮 绘图平面: 俯视图
+			2582 拆分按钮 刀具平面: 俯视图
+			2583 拆分按钮 WCS: 俯视图
+			2584 按钮 线框
+			2585 按钮 显示隐藏线
+			2586 按钮 移除隐藏线
+			2587 按钮 边框着色
+			2588 按钮 图形着色
+			2589 按钮 半透明度
+		510 选项卡 (settable, string) Description: ControlPane Value: 视图单-1 ID: 10100
+			511 按钮 (disabled) 向左滚动
+			512 按钮 (disabled) 向右滚动
+			2590 选项卡项目 (selectable) 视图单-1
+			2591 选项卡项目 (selectable) +
+		515 窗格 ID: 59648
+		516 标题栏 (settable, string) Value: Mastercam 设计 2026
+			517 菜单栏 系统 ID: MenuBar
+				2592 菜单项 系统
+			519 按钮 最小化
+			520 按钮 最大化
+			521 按钮 关闭
+		2296 对话框 不一致的 WCS 操作 Secondary Actions: Raise
+			2297 文本 机床群组-1 ID: 5344
+			2298 文本 毛坯平面: ID: 5345
+			2299 文本 俯视图 ID: 5346
+			2300 文本 车床组中的 WCS 必须与毛坯平面匹配，否则会出现刀具碰撞避让问题，并且可能生成 NC 代码。 ID: 6739
+			2301 文本 此机床组中操作的 WCS 与群组毛坯平面不匹配。 ID: 6740
+			2302 文本 下面所选的平面将用于更新此机床组的毛坯平面以及此群组中所有操作的 WCS。 ID: 6741
+			2303 列表 下面所选的平面将用于更新此机床组的毛坯平面以及此群组中所有操作的 WCS。 ID: 2010
+				2304 标头 标头控件 ID: Header
+					2305 标头项目 名称 ID: HeaderItem 0
+					2306 标头项目 原点(视图坐标) ID: HeaderItem 1
+				2307 滚动条 (settable, float) 垂直滚动条 Value: 0 ID: NonClientVerticalScrollBar
+					2308 按钮 上一行 ID: UpButton
+					2309 缩略图 位置 ID: ScrollbarThumb
+					2310 按钮 向下翻页 ID: DownPageButton
+					2311 按钮 下一行 ID: DownButton
+				2312 滚动条 (settable, float) 水平滚动条 Value: 0 ID: NonClientHorizontalScrollBar
+					2313 按钮 左移一列 ID: UpButton
+					2314 缩略图 位置 ID: ScrollbarThumb
+					2315 按钮 向右翻页 ID: DownPageButton
+					2316 按钮 右移一列 ID: DownButton
+				2317 缩略图 (disabled)
+				2318 列表项目 (selectable) 俯视图
+					2319 文本 俯视图
+					2320 文本 。要保存更改的结果吗？
+				2321 列表项目 (selectable) 前视图
+					2322 文本 前视图
+					2323 文本 。要保存更改的结果吗？
+				2324 列表项目 (selectable) 后视图
+					2325 文本 后视图
+					2326 文本 。要保存更改的结果吗？
+				2327 列表项目 (selectable) 仰视图
+					2328 文本 仰视图
+					2329 文本 。要保存更改的结果吗？
+				2330 列表项目 (selectable) 右视图
+					2331 文本 右视图
+					2332 文本 。要保存更改的结果吗？
+				2333 列表项目 (selectable) 左视图
+					2334 文本 左视图
+					2335 文本 。要保存更改的结果吗？
+				2336 列表项目 (selectable) 等视图
+					2337 文本 等视图
+					2338 文本 。要保存更改的结果吗？
+				2339 列表项目 (selectable) 反向等视图
+					2340 文本 反向等视图
+					2341 文本 。要保存更改的结果吗？
+				2342 列表项目 (selectable) 不等角视图
+					2343 文本 不等角视图
+					2344 文本 。要保存更改的结果吗？
+				2345 列表项目 (selectable) 车床 Z = 世界 Z
+					2346 文本 车床 Z = 世界 Z
+					2347 文本 。要保存更改的结果吗？
+				2348 列表项目 (selectable) +D+Z
+					2349 文本 +D+Z
+					2350 文本 。要保存更改的结果吗？
+				2351 列表项目 (selectable) 车床左上刀塔
+					2352 文本 车床左上刀塔
+					2353 文本 。要保存更改的结果吗？
+				2354 列表项目 (selectable) 俯视图-车削 X
+					2355 文本 俯视图-车削 X
+					2356 文本 。要保存更改的结果吗？
+				2357 列表项目 (selectable) CAPABILITY_ORIGIN_X2
+					2358 文本 CAPABILITY_ORIGIN_X2
+					2359 文本 。要保存更改的结果吗？
+			2360 按钮 更新 ID: 5349
+			2361 按钮 跳过 ID: 5348
+			2362 按钮 |帮助(H) ID: 9
+			2363 标题栏 (settable, string) Value: 不一致的 WCS 操作
+				2364 按钮 关闭
+
+Document text: ```
+0
+```

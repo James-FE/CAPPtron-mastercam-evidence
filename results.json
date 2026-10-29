@@ -1,0 +1,3522 @@
+[
+  {
+    "probe": "od",
+    "before": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "same_session": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 145,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "reopened": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 145,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "sha256": "7941DDC255CC39D11C1D85A8436F298E30B1E9CD28F18935217A373FAF6A854A"
+  },
+  {
+    "probe": "length",
+    "before": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "same_session": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 140,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "reopened": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 140,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "sha256": "D5F7DD7CCE00E902FCF0418818D3848C4E5569C4A523E6741101B000114D0B71"
+  },
+  {
+    "probe": "bore",
+    "before": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "same_session": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 10,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": true,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "reopened": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 10,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": true,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "sha256": "F52BCFD3E5559B7F29C603B003E5DCD57D0F170C84778EE2B319E6C0DC6EA679"
+  },
+  {
+    "probe": "grip",
+    "before": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 25
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "same_session": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 24
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "reopened": {
+      "groupId": 1,
+      "product": 1,
+      "spindles": [
+        {
+          "index": 0,
+          "boundaryIds": [
+            89,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": true,
+          "holeInStock": false,
+          "useMargins": true,
+          "margins": [
+            0,
+            0,
+            0,
+            0.5
+          ],
+          "chuckGripLength": 24
+        },
+        {
+          "index": 1,
+          "boundaryIds": [
+            0,
+            0
+          ],
+          "display": true,
+          "od": 150,
+          "id": 0,
+          "length": 150,
+          "refZ": 0,
+          "refAtMaxZ": false,
+          "holeInStock": false,
+          "useMargins": false,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "chuckGripLength": 25
+        }
+      ]
+    },
+    "sha256": "3F101A17BEA9133BBEEF79ABBBFE190CB3BC07F7B7BF560FE93684347EC5FC3A"
+  },
+  {
+    "probe": "offset",
+    "before": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "same_session": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": 2,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "reopened": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": 2,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "sha256": "3776D0192CA07A932402BDA5A5A4257F39C8872ECBCE03A9A4FB66819ED96D39"
+  },
+  {
+    "probe": "origin-world-x",
+    "before": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "same_session": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          1,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "reopened": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "sha256": "620E3A8E57C2E76B5407A5C7BC442FCD213ED07E73A3EC21B7D34BFDE3FC0494"
+  },
+  {
+    "probe": "finish-feed",
+    "before": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "same_session": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.25,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "reopened": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.25,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "sha256": "970168C9844737AEB8C0581B64C2B1009013386BE77D74928726501D1748F1E4"
+  },
+  {
+    "probe": "finish-rpm",
+    "before": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "same_session": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 290,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "reopened": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 290,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "sha256": "26639995D86E7058C2CD67AC320263494478D17590D3637980B24B8604071127"
+  },
+  {
+    "probe": "finish-stock-x",
+    "before": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "same_session": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0.03,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "reopened": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0.03,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "sha256": "C74BF063D4FDE389F3A796089E80B079A6F598CF3E61B7FFE42AE785D6BBFAFF"
+  },
+  {
+    "probe": "finish-stock-z",
+    "before": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "same_session": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0.04
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "reopened": [
+      {
+        "id": 1,
+        "get": true,
+        "opcode": 66,
+        "slot": 1,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 0,
+        "nciEnd": 8262,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "get": true,
+        "opcode": 64,
+        "slot": 2,
+        "toolNumber": 9,
+        "toolSlot": 4,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 51268,
+        "nciEnd": 59430,
+        "feed": -0.05000000000000001,
+        "rpm": 200,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "get": true,
+        "opcode": 60,
+        "slot": 3,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 8304,
+        "nciEnd": 17422,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "get": true,
+        "opcode": 61,
+        "slot": 4,
+        "toolNumber": 1,
+        "toolSlot": 1,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 17464,
+        "nciEnd": 25938,
+        "feed": -0.3,
+        "rpm": 295,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0.04
+      },
+      {
+        "id": 4,
+        "get": true,
+        "opcode": 60,
+        "slot": 5,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 25980,
+        "nciEnd": 34242,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "get": true,
+        "opcode": 61,
+        "slot": 6,
+        "toolNumber": 2,
+        "toolSlot": 2,
+        "entityCount": 2,
+        "boundaryCount": 1,
+        "dirty": false,
+        "nciStart": 34284,
+        "nciEnd": 42652,
+        "feed": -0.10000000000000002,
+        "rpm": 330,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "finishStockX": 0,
+        "finishStockZ": 0
+      },
+      {
+        "id": 6,
+        "get": true,
+        "opcode": 67,
+        "slot": 7,
+        "toolNumber": 4,
+        "toolSlot": 3,
+        "entityCount": 1,
+        "boundaryCount": 0,
+        "dirty": false,
+        "nciStart": 42694,
+        "nciEnd": 51226,
+        "feed": -0.10000000000000002,
+        "rpm": 115,
+        "planeId": 1,
+        "workOffset": -1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "sha256": "5326E07A11BEE8B79FC9541BB2ED03749D6CF220C69181043275BA5DC67C2E33"
+  }
+]

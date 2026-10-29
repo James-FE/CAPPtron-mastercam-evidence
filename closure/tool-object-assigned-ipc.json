@@ -1,0 +1,7 @@
+{
+  "command": "RUN D:\\GPT_workspace\\CNC_project\\integration-20261027\\evidence\\mastercam-capability-20261029\\closure\\tool-object-assigned.csx",
+  "greeting": "Connected in 23222 milliseconds. Enter a command. 'HELP' for options.",
+  "response": "Ran Successfully.\nEnter next command.",
+  "elapsedMs": 3341,
+  "success": true
+}

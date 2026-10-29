@@ -1,0 +1,32 @@
+2026-10-29 Origin persistence: official SDK follow-up
+Conclusion: Mastercam native origin persistence is available on this host. Direct modification of operation.WCS.origin alone is not a complete plane update. This is an integration gap, not evidence that Mastercam cannot persist origins.
+
+Official installed sources:
+D:\Program Files\Mastercam 2026\NETHook3_0.xml
+- MCView.ViewOrigin, ViewMatrix, ViewName and bool Commit(), lines 83423-83474. Commit writes view entity to database. Locked system views cannot be committed.
+- Operation.WCS, UseWCS, Commit(bool includeGeometry). Candidate managed binding path is unavailable for this lathe op: SearchManager.GetOperation(3) returned null.
+D:\Program Files\Mastercam 2026\sdk\interfaces\GUI\MastercamPlanes_CH.h
+- lines 69-77: op_view stores plane ID plus matrix/origin copy, AssignmentPriority PlaneID vs Matrix.
+- CheckOperationPlane / CheckOperationPlanes: official native consistency APIs, documented candidates, NOT invoked in these tests.
+D:\Program Files\Mastercam 2026\sdk\interfaces\Core\Groups_CH.h:210
+- pg1.stock_view: group stock view and origin.
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseGroupView_CH.h
+- named plane ID, matrix, origin IN WORLD COORDINATES.
+D:\Program Files\Mastercam 2026\sdk\interfaces\GUI\OpGroupsAPI_CH.h
+- Cnc::OpMgr::OpGroupsAPI::UpdateGroup(const op_group&) -> const op_group*.
+NETHook3_0.dll file version 28.0.0.0, product 2026. Host startup previously reported 2026.R2 28.0.8789.0; version labels differ.
+
+Test 1: origin-official-plane
+Fresh baseline copy. Copy plane1 matrix to new MCView, origin (2,0,0), same WorkOffsetNumber, unique name CAPABILITY_ORIGIN_X2. Commit true; new plane ID55. Native operation_manager GET/REWRITE bound op3 to ID55 and matching origin. SaveAs true. New/Open paused on lathe WCS mismatch dialog; IPC timed out, command was NOT resubmitted. Saved dialog text and clicked Skip (no automatic group update). Original command then completed and wrote reopened.json/test.log: op3 ID55 and (2,0,0) persisted, other ops ID1/(0,0,0). This is persisted but inconsistent setup. Retain as failure/side-effect evidence.
+
+Test 2: origin-official-group
+Independent fresh baseline copy. Same new plane creation. UpdateGroup set group1 pg1.stock_view planeID55 and world origin (2,0,0). Native GET/REWRITE set all seven existing ops [1,8,2,3,4,5,6] WCS planeID55 and origin (2,0,0), preserving baseline matrices. SaveAs persisted-output.mcam true. New/Open completed automatically in same IPC command (3.445s). Reopened plane object, group and all seven operations retained ID55 and origin (2,0,0). This test is limited to translation using unchanged plane1 orientation; it does not establish arbitrary coordinate-transform or all lathe-group configuration support.
+
+Readback comparison of recorded fields: only planeId and origin changed per operation. Count/identities, opcode, slot, tools, feed, speed, allowance, work-offset number, dirty flags, NCI offsets and entity/boundary counts unchanged. Captured subset is not full binary/geometry equivalence. CPlane/TPlane and stock/chuck geometry were not exhaustively compared in these follow-up tests.
+All dirty flags remained false. No regeneration, simulation, posting, NC generation or machine actions were requested or invoked. Existing toolpaths cannot be accepted for the changed setup on this evidence. Future integration must explicitly invalidate/require review of affected toolpaths, perform needed regeneration/replanning and simulation with separate authorization and verify completion. Native dirty alone is inadequate in this low-level write path.
+
+Values are metric world-coordinate translations, NOT machine controller offsets and NOT automatically lathe diameter/radius X values. No geometry translation requested. Physical setup confirmation remains required.
+Original Golden SHA remains 7c279238996e717f43dc20ff69f055edae75cad281344f636805bb03c3956804. Inputs unchanged, outputs new independent files. Only evidence probes and logs were created; no product deployment/code change.
+Current active document: origin-official-group\persisted-output.mcam (TEST ONLY).
+
+Minimum integration: create/update an editable named plane and Commit; preserve/validate its matrix and origin semantics; update the lathe group's stock-plane and affected operations consistently; save isolated output; close/open and verify plane/group/operations; enforce explicit toolpath validity and engineering review gates. The current plugin/application does not yet implement this complete chain. Exact root cause of earlier raw-origin reset inside the closed-source loader is not traced; the official data model and controlled tests support a plane-reference consistency explanation.

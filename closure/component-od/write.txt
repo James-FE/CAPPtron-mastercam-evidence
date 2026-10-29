@@ -1,0 +1,3 @@
+stocks=1 jaws=0
+SetGeometry success=1 code=0
+Write success=0 code=1

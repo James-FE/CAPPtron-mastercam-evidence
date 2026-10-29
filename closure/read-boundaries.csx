@@ -1,0 +1,4 @@
+string root=@"D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029";
+if(!Mastercam.IO.FileManager.CurrentFileName.StartsWith(root+"\\"))throw new System.Exception("Unexpected document");
+foreach(string n in new[]{"baseline","od","length","bore","grip"}){if(!Mastercam.IO.FileManager.Open(false,root+"\\"+n+".mcam"))throw new System.Exception("open");int rc=P.ReadBoundary(root+"\\closure\\"+n+"-boundary.json");System.IO.File.AppendAllText(root+@"\closure\boundary.log",n+"="+rc+"\n");}
+public static class P{[System.Runtime.InteropServices.DllImport(@"D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\build-boundary\BoundaryProbe.dll",CallingConvention=System.Runtime.InteropServices.CallingConvention.Cdecl,CharSet=System.Runtime.InteropServices.CharSet.Unicode)]public static extern int ReadBoundary(string path);}

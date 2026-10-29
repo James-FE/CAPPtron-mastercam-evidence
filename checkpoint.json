@@ -1,0 +1,30 @@
+{
+  "status": "incomplete_host_ipc_not_ready",
+  "native_read_performed": false,
+  "native_write_performed": false,
+  "save_reopen_performed": false,
+  "regeneration_requested": false,
+  "simulation_requested": false,
+  "post_requested": false,
+  "product_code_modified": false,
+  "observed_version": "2026.R2 28.0.8789.0 (startup UI)",
+  "launched_process_ids": [
+    30388,
+    7364
+  ],
+  "stock_candidate": "GroupsMachineGroup(nullptr) -> op_group.ogi.pg3.stock_def[2]: od,id,length,refZ,refAtMaxZ,holeInStock,useMargins",
+  "commit_candidate": "const op_group* UpdateGroup(const op_group& opGroup); GUI/OpGroupsAPI_CH.h:520; not invoked",
+  "fixture_candidate": "Core/Groups_CH.h chuck_type.gripLength; semantic mapping and persistence unverified",
+  "existing_plugin": "capabilities.cpp snapshot reads WCS.m_PlaneID,WCS.woff_n and stock; write_parameters supports feed,rpm,stock_x,stock_z,rough_step with opcode restrictions",
+  "limitations": [
+    "No fresh native baseline read",
+    "No diameter, bore or length persistence result",
+    "No origin, fixture or finish-parameter persistence result",
+    "No operation identity or toolpath validity comparison",
+    "No original asset hash verification or test copy yet",
+    "No proof of simulation consuming updated group fields"
+  ],
+  "recovery": "Existing worker session/reset-error and recovery records untouched",
+  "ui_issue": "After reselect/activate, accessibility null; capture includes occluding other application; no reliable target state",
+  "conclusion": "Application stock/setup unsupported guards confirmed; native candidates exist, usability not yet established"
+}

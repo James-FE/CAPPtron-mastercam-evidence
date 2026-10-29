@@ -1,0 +1,4 @@
+saved=True
+current=D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\origin-save-check\saveas-input.mcam
+exists=True
+size=739820

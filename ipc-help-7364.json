@@ -1,0 +1,7 @@
+{
+  "command": "HELP",
+  "greeting": "Connected in 73969 milliseconds. Enter a command. 'HELP' for options.",
+  "response": "\n\t'RUN [scriptPath]' to run a script\n\t'RUN [ftName] [ftCommand]' to run add-in via ExternalAppsManager.RunFTCommand()\n\t'STOP' to close down the server\n\t'HELP' to see this menu\nEnter next command.",
+  "elapsedMs": 20,
+  "success": true
+}

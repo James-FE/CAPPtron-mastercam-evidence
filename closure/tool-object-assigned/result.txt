@@ -1,0 +1,6 @@
+before slot=1 name=OD FINISH RIGHT - 35 DEG. insert=73c1f259-773f-44a8-aab2-61a1e7378685 radiusMm=0.4
+local=0.45
+Update=True
+after slot=1 name=OD FINISH RIGHT - 35 DEG. insert=73c1f259-773f-44a8-aab2-61a1e7378685 radiusMm=0.45
+Save=True
+reopened slot=1 name=OD FINISH RIGHT - 35 DEG. insert=73c1f259-773f-44a8-aab2-61a1e7378685 radiusMm=0.45

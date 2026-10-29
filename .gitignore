@@ -1,0 +1,10 @@
+.env*
+*.key
+*.pem
+build*/
+publish/
+*.dll
+*.obj
+*.pdb
+*.lib
+*.exp

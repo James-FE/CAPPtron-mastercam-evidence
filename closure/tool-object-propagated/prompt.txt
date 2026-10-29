@@ -1,0 +1,8 @@
+Window: "有一个或多个操作在使用此刀具", App: Mastercam.exe.
+	0 对话框 有一个或多个操作在使用此刀具 Secondary Actions: Raise
+		1 按钮 是(Y) ID: 6
+		2 按钮 否(N) ID: 7
+		3 图像 ID: 20
+		4 文本 更改此刀具将会更改您的操作。是否继续？ ID: 65535
+		5 标题栏 (settable, string) Value: 有一个或多个操作在使用此刀具
+			6 按钮 (disabled) 关闭

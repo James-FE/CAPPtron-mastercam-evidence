@@ -1,0 +1,32 @@
+ops-extra.cpp
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Cplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): error C2039: "Tplane": 不是 "operation" 的成员
+D:\Program Files\Mastercam 2026\sdk\interfaces\systypes\BaseOperationTypes_CH.h(547): note: 参见“operation”的声明
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): warning C4473: “fprintf”: 没有为格式字符串传递足够的参数
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): note: 占位符和其参数预计 15 可变参数，但提供的却是 1 参数
+D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\ops-extra.cpp(33): note: 缺失的可变参数 2 为格式字符串“%d”所需

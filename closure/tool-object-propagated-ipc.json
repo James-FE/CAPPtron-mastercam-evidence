@@ -1,0 +1,6 @@
+{
+  "command": "RUN D:\\GPT_workspace\\CNC_project\\integration-20261027\\evidence\\mastercam-capability-20261029\\closure\\tool-object-propagated.csx",
+  "error": "IPC read timeout after 20000 ms",
+  "elapsedMs": 20032,
+  "success": false
+}

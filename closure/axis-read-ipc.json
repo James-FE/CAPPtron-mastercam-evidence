@@ -1,0 +1,7 @@
+{
+  "command": "RUN D:\\GPT_workspace\\CNC_project\\integration-20261027\\evidence\\mastercam-capability-20261029\\closure\\axis-read.csx",
+  "greeting": "Connected in 64780 milliseconds. Enter a command. 'HELP' for options.",
+  "response": "Ran Successfully.\nEnter next command.",
+  "elapsedMs": 2551,
+  "success": true
+}

@@ -1,0 +1,9 @@
+before plane=1 name=俯视图 locked=True origin=X0.0000 Y0.0000 Z0.0000 matrix=Mastercam.Math.Matrix3D
+plane.Commit=True id=55
+BindPlane=0
+modified plane=1 name=俯视图 locked=True origin=X0.0000 Y0.0000 Z0.0000 matrix=Mastercam.Math.Matrix3D
+modified plane=55 name=CAPABILITY_ORIGIN_Z2 locked=False origin=X0.0000 Y0.0000 Z2.0000 matrix=Mastercam.Math.Matrix3D
+SaveAs=True
+reopened plane=1 name=俯视图 locked=True origin=X0.0000 Y0.0000 Z0.0000 matrix=Mastercam.Math.Matrix3D
+reopened plane=55 name=CAPABILITY_ORIGIN_Z2 locked=False origin=X0.0000 Y0.0000 Z2.0000 matrix=Mastercam.Math.Matrix3D
+current=D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\closure\origin-z\persisted-output.mcam

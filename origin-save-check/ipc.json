@@ -1,0 +1,7 @@
+{
+  "command": "RUN D:\\GPT_workspace\\CNC_project\\integration-20261027\\evidence\\mastercam-capability-20261029\\origin-save-check\\probe.csx",
+  "greeting": "Connected in 800502 milliseconds. Enter a command. 'HELP' for options.",
+  "response": "Ran Successfully.\nEnter next command.",
+  "elapsedMs": 6442,
+  "success": true
+}

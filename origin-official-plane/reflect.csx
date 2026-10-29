@@ -1,0 +1,3 @@
+var types=new[]{typeof(Mastercam.Database.Operation),typeof(Mastercam.Database.MCView)};
+var s=new System.Text.StringBuilder();foreach(var t in types){s.AppendLine(t.FullName+" abstract="+t.IsAbstract);foreach(var c in t.GetConstructors())s.AppendLine(c.ToString());foreach(var f in t.GetFields())if(f.Name.Contains("Plane")||f.Name=="WCS")s.AppendLine(f.ToString());foreach(var m in t.GetMethods())if(m.Name.Contains("Commit")||m.Name.Contains("Retrieve")||m.Name.Contains("Origin"))s.AppendLine(m.ToString());}
+System.IO.File.WriteAllText(@"D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\origin-official-plane\reflection.txt",s.ToString());

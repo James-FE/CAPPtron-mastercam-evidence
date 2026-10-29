@@ -1,0 +1,2 @@
+stocks=1 jaws=0
+FAILED: no unique native jaws component; legacy grip scalar is not a configured jaw

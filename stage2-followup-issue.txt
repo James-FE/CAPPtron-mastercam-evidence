@@ -1,0 +1,40 @@
+## 问题与范围
+
+2026-10-29 在本机 Mastercam 2026.R2（28.0.8789.0）上完成现场参数最小能力调查。已足够支撑第二阶段的兼容判断和缺口分类，用户决定停止继续深挖接口。此 issue 跟踪未完成验证及 Core 后续接入，不把调查通过当作产品已接入或制造验收通过。
+
+关联 #146（毛坯表示来源）、#135（圆环闭环验收）；不关闭或改写已有问题。本次明确使用最新七工序 Golden，MCAM SHA256 `7c279238996e717f43dc20ff69f055edae75cad281344f636805bb03c3956804`，工序ID顺序 `[1,8,2,3,4,5,6]`。
+
+## 已获得证据，后续无需重复发现
+
+- **毛坯表示**：旧组 `pg3.stock_def` 为150/0/150，字段写入可保存；但实际 MachineDefApi stock cylinder 为外径43、内径38、长度100 mm（radius21.5/innerRadius19），base `[0,0,0]`、axis `[-1,0,0]`。旧组写入未改变该组件及边界89，早期“毛坯修改成功”结论只适用于旧记录。
+- **具体写入失败**：`StorageControllerFactory().CreateDatabaseStorageController()`→Initialize/Read成功；stock SetGeometry成功；`IStorageController.Write(IMachineContext&)` 和 `Write(IMachine&)` 均返回false、`ResultCode=1/Unimplemented`、文本 `Unimplemented.`。独立外径43→45、长度100→98、内径38→36及38→0测试保存重开仍为原值。这是两条本机存储写入路径不可用，未证明Mastercam整体不支持修改毛坯。
+- **原点/偏置**：创建可编辑 `MCView` 并Commit，同步车床组stock_view和全部七工序WCS后，独立世界X/Y/Z各平移2 mm均保存重开成功；只改某工序会出现平面不一致警告。单写WCS.origin的Save/SaveAs对照失败，不能归因于没保存。工程woff_n -1→2持久化，控制器数值未涉及。
+- **装夹**：旧gripLength25→24可保存，但两侧chuck虽jawsCount=3，实际jaws组件为0；原生夹爪探针因目标缺失防护退出，未调用setter。SDK有GripLength/StockStickOut候选，未验证真实装夹持久化或仿真消费。
+- **工艺/刀具**：外/内圆精车进给、CSS模式、速度值、X/Z余量均有保存重开证据。刀具需Clone并把修改后的MainInsert赋回后Update，半径0.4→0.45 mm成功；UpdateAllOperations传播到slot1的op1/2/3，并使七工序dirty=true。Automate仍出现确认弹窗，无人值守行为未通过。
+- **表面质量**：原生surf_fin_feed理论表面质量模式（帮助描述microns）可保存1.6，文档说明会转换进给；未验证再生后的消费，不能等同现场Ra或保证达标。
+- **刀路失效**：低层原点/旧组写入可能保持dirty=false；显式OPMGR_NCI_FLAG可持久化dirty=true。现有插件有FLAG/REGEN及回读检查源码，本次没有执行再生或验证所有失败恢复。
+
+## 待完成及关闭标准
+
+- [ ] 结合#146核实实际采用的毛坯表示和消费者，明确组件、边界、旧组字段与policy的来源；修正Core快照/基准使用方式，保留资产身份及批准流程。不得自动把policy的150/0/150覆盖成43/38/100。
+- [ ] 毛坯如需自动应用，另行找到可用写入提交路径；对外径、长度、非零孔、实心分别验证同会话和保存重开，附实际组件与边界对照、单位、轴向和副作用。UI回退未测完，不能将候选文档或旧组写入算通过。当前保留`cam_stock_update_unsupported`。
+- [ ] 将命名平面/车床组/受影响工序的一致更新与回读证明接入插件和应用；补旋转/坐标约定、工程偏置编号映射等必要验证。未接入前保留`setup_change_unsupported`，不操作控制器实际偏置。
+- [ ] 明确fixture-type/grip-length/extension-length各自原生映射及所需夹爪/筒夹模型；补真实配置下持久化与消费者证据，或明确unsupported/missing-configuration。用户实物装夹确认单独保留。
+- [ ] 补CSS单位、X余量径向/直径约定、工具对象/操作缓存一致性及交互警告处理，再决定哪些字段开放；Ra要求来源冲突与加工效果继续单独处理，不设计未经验证Ra映射。
+- [ ] 应用修改后显式判定受影响工序和依赖失效，确认需要再规划/再生、仿真和审核的位置，并记录更新失败；旧刀路在旧毛坯有效不代表适用新毛坯。按后续批准范围另做实际流程验收。
+- [ ] 对实际安装运行版本验证批准参数→插件写入→同会话回读→保存重开→失效处理的完整链路；记录失败原因，不能用源码分支/SDK成功代替部署验收。
+
+## 证据与复核入口
+
+本地证据根目录：`D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029`（以下相对该目录）。原始大文件/日志未上传到GitHub，异机复核需另行取得证据目录。
+
+- `stage2-handoff.txt`：完整交接、接口/版本来源、参数值及边界。
+- `closure/component-{od,length,bore,solid}/`、`closure/component-od-v2/`：before/after/reopened-machine.txt、write.txt、result.txt、独立test.mcam；`machine-write*.cpp`及构建脚本。
+- `origin-persistence-conclusion.txt`、`origin-official-group/`、`closure/origin-{y,z}/`、`closure/axis-transform.txt`。
+- `closure/component-grip/`、`closure/grip-boundary.json`。
+- `closure/tool-object*/`、`closure/theoretical-finish/`、`closure/dirty/`及原有finish参数回读JSON。
+
+本机官方SDK在 `D:\Program Files\Mastercam 2026\sdk\interfaces\MachineDefApi`，`ResultCode_CH.h`定义Unimplemented=1；平面依据NETHook3_0.xml、MastercamPlanes_CH.h与BaseGroupView_CH.h；工具依据ToolNetApi.xml。
+研究代码基线为core-onsite-v2 `ed510f09c8c4a3da72bc0de50ef75faf2c059a49`，不代表当前上游main或运行包；实施前重新检查PR依赖和部署版本。
+
+本轮只新增证据探针和隔离副本，原件SHA再次校验一致；未部署、未再生/仿真/后处理、未生成NC、未连接机床。制造确认和后续执行需按相应任务授权推进。

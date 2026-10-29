@@ -1,0 +1,11 @@
+2026-10-29 原点保存争议对照实测
+目的：检验未保存/未另存导致WCS.origin丢失的解释。
+两个全新Golden隔离副本，均只修改工序3 WCS.origin[0]=2以及tl.feed=-0.23。进给是保存阳性对照，不是工艺建议。
+A：FileManager.Save()覆盖测试副本。返回true，文件739820字节。
+B：FileManager.SaveAs(此前不存在的新完整路径)。返回true，新文件739820字节。特别注意：SaveAs后CurrentFileName仍是输入文件名，故明确New关闭并按新输出路径Open，不能假定当前文档路径已切换。
+两组：修改前origin=[0,0,0],feed=-0.3；修改后以及保存后未关闭时origin=[2,0,0],feed=-0.23；关闭重开目标文件origin=[0,0,0],feed=-0.23。
+结论：已证明保存/另存确实写入了修改后的工程，不能把原点恢复归因于遗漏整个文件保存。直接写工序WCS.origin的原点信息未能在重开结果保留。
+原因线索：安装SDK interfaces/GUI/MastercamPlanes_CH.h:69-77说明op_view保存plane ID及matrix/origin副本，AssignmentPriority分PlaneID与Matrix。探针保留m_PlaneID=1，仅修改origin副本。因此命名平面优先级/一致性恢复是有依据的候选原因，但尚未跟踪读取内部流程，不能称完整根因已证实。
+此结果不否认Mastercam能修改原点；下一步应验证命名平面数据库更新及工序绑定，而非继续只修改op_view副本。
+未再生、仿真、后处理，未修改生产资产。本轮当前打开saveas-new-output.mcam隔离副本。
+证据：probe.csx、ipc.json、save/saveas各阶段JSON、保存回执及hashes.json。

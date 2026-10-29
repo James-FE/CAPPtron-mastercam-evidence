@@ -1,0 +1,2 @@
+var s=new System.Text.StringBuilder();try{var op=Mastercam.Support.SearchManager.GetOperation(3);s.AppendLine("operation="+(op==null?"null":op.GetType().FullName));}catch(System.Exception e){s.AppendLine(e.ToString());}foreach(var v in Mastercam.IO.ViewManager.GetAllViews(true)){s.AppendLine("id="+v.ViewID+" name="+v.ViewName+" locked="+v.IsLockedView+" origin="+v.ViewOrigin);}
+System.IO.File.WriteAllText(@"D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\origin-official-plane\inventory.txt",s.ToString());

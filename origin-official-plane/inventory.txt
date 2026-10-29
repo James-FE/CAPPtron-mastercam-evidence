@@ -1,0 +1,3 @@
+operation=null
+id=52 name=车床左上刀塔 locked=False origin=X0.0000 Y0.0000 Z0.0000
+id=54 name=俯视图-车削 X locked=False origin=X0.0000 Y0.0000 Z0.0000

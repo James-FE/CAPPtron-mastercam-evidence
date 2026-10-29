@@ -1,0 +1,35 @@
+initialize=1 code=0
+read=1 code=0
+depth=0 type=2 name=Default
+depth=1 type=62 name=Left Spindle Group
+depth=2 type=32 name=Lathe Left Spindle C Axis
+depth=3 type=5 name=Lathe Chuck
+chuck jawsCount=3 jawsComponentPresent=0
+depth=4 type=33 name=stock cylinder=1
+radius=21.5 length=100 innerRadius=19 base=[0,0,0] axis=[-1,0,0]
+depth=1 type=43 name=Right Spindle Group
+depth=2 type=18 name=Lathe Right Spindle Z Axis (<--+)
+depth=3 type=32 name=Lathe Right Spindle C Axis
+depth=4 type=5 name=Lathe Chuck
+chuck jawsCount=3 jawsComponentPresent=0
+depth=1 type=51 name=Upper Tools Group
+depth=2 type=18 name=Lathe Left Spindle Z Axis (-->+)
+depth=3 type=18 name=Lathe Upper Turret X Axis
+depth=4 type=18 name=Lathe Upper Turret Y Axis
+depth=5 type=32 name=Lathe B Axis Arm
+depth=6 type=36 name=Lathe B Axis Tool Spindle
+depth=7 type=19 name=Lathe Upper Turret
+depth=1 type=52 name=Lower Tools Group
+depth=2 type=18 name=Lathe Left Spindle Z Axis (-->+)
+depth=3 type=18 name=Lathe Lower Turret X Axis
+depth=4 type=18 name=Lathe Lower Turret Y Axis
+depth=5 type=32 name=Lathe B Axis Arm
+depth=6 type=36 name=Lathe B Axis Tool Spindle
+depth=7 type=19 name=Lathe Lower Turret
+depth=1 type=60 name=Tailstock Group
+depth=2 type=17 name=Lathe Tailstock
+depth=1 type=58 name=Steady Rest Group
+depth=2 type=38 name=Lathe Steady Rest
+depth=1 type=41 name=ATC Group
+depth=2 type=4 name=Automatic Tool Changer
+depth=1 type=53 name=Fixed Tools Group

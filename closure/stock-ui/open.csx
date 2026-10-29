@@ -1,0 +1,1 @@
+if(!Mastercam.IO.FileManager.CurrentFileName.StartsWith(@"D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\"))throw new System.Exception("guard");if(!Mastercam.IO.FileManager.Open(false,@"D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029\closure\stock-ui\test.mcam"))throw new System.Exception("open");

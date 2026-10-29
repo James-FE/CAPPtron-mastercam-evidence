@@ -1,0 +1,96 @@
+第二阶段现场校验交接报告 — Mastercam 2026 本机能力调查
+日期：2026-10-29（Asia/Shanghai）
+上游跟踪：https://github.com/cosmic-snail/CAPPtron-core/issues/184（已提交，关联#146/#135）
+
+1. 给接手 session 的决定
+
+用户已决定停止进一步能力探测，节省成本，继续完成第二阶段现场校验。当前证据足以区分输入有效性、应用兼容性、原生修改和制造验收；不代表参数自动应用功能已实现或第二阶段全部验收通过。不要重新跑本报告中的探针。仅在实现或验收确实需要新证据时，按上游 issue 的范围补测。
+
+本轮未部署 Core/Worker 产品功能，未修改生产 Golden、批准档案、policy 或 PST；创建了证据脚本、探针 DLL、日志及独立 MCAM 副本。未调用刀路再生、仿真、后处理、生成新 NC 或机床接口。现存刀路不因参数回读成功就获得适用性认可。
+
+2. 环境与资产身份
+
+工作目录 D:\GPT_workspace\CNC_project
+证据根目录 E = D:\GPT_workspace\CNC_project\integration-20261027\evidence\mastercam-capability-20261029
+以下 E\... 均是实际本机路径；证据未随 issue 上传 GitHub，异机接手须取得该目录，不能假设 GitHub 包含原始副本。
+
+原件：C:\Users\Caesa\OneDrive\Desktop\大连理工\机械加工代码生成项目\加工指导\环3D零件\圆环_Golden-B7_钻孔已验证_20261022.mcam
+SHA256：7c279238996e717f43dc20ff69f055edae75cad281344f636805bb03c3956804
+交接时再次校验一致。用户确认最新七工序版本，工序顺序/ID 为 [1,8,2,3,4,5,6]；NC 头旧文件名无须重复询问。
+STEP SHA256：46d4cd6f64d3f239fc40934c7bc0178063ef75327aa449268b29d76ca7c9c808
+NC SHA256：8cdf5cb7c6873e9e2b4bb0c4930a08547869cff6d2fbb58dadffbea02af6783d
+后两项沿用资产交接身份，本次没有重做 NX 或 NC 验收。
+
+宿主启动版本：Mastercam 2026.R2 28.0.8789.0；程序集文件版本 28.0.0.0/product2026，勿混为同一种版本号。
+已用 IPCServer：D:\Program Files\Mastercam 2026\chooks\MCNetScripting\IPCServer.dll
+本轮成功宿主 PID7364/管道 MastercamPipe7364，仅供历史追溯，下轮重新枚举，不固定 PID、不要求用户手动加载；先查已有连接与成功加载路径。
+SDK：D:\Program Files\Mastercam 2026\sdk\interfaces
+托管说明：安装根目录 NETHook3_0.xml、ToolNetApi.xml；本地官方帮助：help\zh-CN\Content。
+
+3. 必须覆盖早期报告的毛坯结论
+
+E\summary.txt、results.json 中早期“毛坯修改成功”仅证实旧组结构字段持久化，不能作为实际组件毛坯修改成功证据。本报告的后续组件核查优先。
+
+原件独立副本的 MachineDefApi 读回：唯一 stock cylinder，radius21.5、innerRadius19、length100，故外径43/内径38/长度100 mm；base[0,0,0]，axis[-1,0,0]。旧组 pg3.stock_def 及 policy 则为150/0/150。不能把两个表示混用，也不能仅凭本轮回读自动重签可信模板/policy。实际仿真消费尚未运行验证。
+
+旧结构接口 GroupsMachineGroup(nullptr)、Cnc::OpMgr::OpGroupsAPI::UpdateGroup(const op_group&)：分别 OD150→145、长度150→140、预孔0→10并开孔，可保存重开；但实际毛坯组件与边界89不变。失败原因是修改了另一套记录，未改到目标组件。
+
+官方组件读写候选：StorageControllerFactory().CreateDatabaseStorageController()，Initialize(machine_ent_idn,false)，Read()；IStockComponent.GetGeometry/SetGeometry，ICylinderParametricGeometry.SetRadius/SetLength/SetInnerRadius，IStorageController.Write(IMachineContext&) 与 Write(IMachine&)。
+独立测试 OD43→45、长度100→98、内径38→36及38→0：SetGeometry成功；实际提交 Write 返回 success=false、ResultCode=1（官方枚举 Unimplemented）、文本“Unimplemented.”。另一个 Write 重载亦相同。保存成功但重开仍43/38/100。
+结论：本机这两条官方存储写入路径不可用；其他接口或 UI 路径尚未验证，不能扩大为“Mastercam 没有毛坯修改能力”。UI 回退曾遇 Windows 锁屏，用户后来已解锁；因用户决定收口而未继续 UI 测试。
+证据：E\closure\component-{od,length,bore,solid}\、component-od-v2\ 的 before/after/reopened-machine.txt、write.txt、result.txt、test.mcam；E\closure\*-boundary.json；E\machine-write*.cpp 和 build-machine-write*.ps1。
+边界89原始坐标尚未完成缩放单位确认，不把原始整数坐标直接称作 mm。
+
+4. 零点、平面、偏置：已有原生能力，完整链路未接入
+
+原生操作 GET/REWRITE 单写 WCS.origin，Save() 与 SaveAs() 对照均不能保住该 origin；同次修改的进给能保存，排除了“根本没保存”。不要重复把该失败归因于未点保存。
+成功路径：new MCView；复制基准平面矩阵；设置 ViewOrigin/ViewName；Commit() 建立可编辑命名平面；通过原生接口同步机床组 pg1.stock_view 的平面ID/世界原点及全部七工序 WCS 平面ID/原点；SaveAs→New→Open→回读。
+独立 X/Y/Z 测试分别将世界原点0改为2 mm，均持久化。只改一个工序的命名平面也能保存，但重开出现车床 WCS/毛坯平面不一致警告，不能作为可用的一致设置。
+工序 WCS.woff_n -1→2 也已保存重开；它是工程偏置选择，本轮没有验证输出G代码映射，更没有修改控制器偏置数值。
+世界坐标、WCS、构图平面和刀具平面必须分开。平面52（车床左上刀塔）下，world X→view Z、world Y→view X、world Z→view Y；转换无二倍因子，不把世界原点X直接当车床直径X。
+低层写入后 dirty 可保持false，不能以此证明旧刀路有效。未验证任意旋转/所有机床组配置。
+证据：E\origin-persistence-conclusion.txt、origin-save-check\、origin-official-plane\、origin-official-group\；E\closure\origin-y\、origin-z\、axis-transform.txt。
+
+5. 装夹：有候选接口，但当前工程目标组件缺失
+
+旧组 gripLength25→24 可持久化，夹具几何/实际夹持未由此改变。真实组件树两侧 chuck 的 jawsCount=3，但 GetChuckJaws()==null，夹爪组件总数0；“三爪数量”不能冒充已有夹爪模型。
+IChuckJawsComponent.Get/SetGripLength、Get/SetStockStickOut 是安装SDK候选；类型/筒夹也有组件API，但未实现完整映射或测试配置替换。
+原生夹持探针因没有唯一夹爪组件，防护返回14而没有尝试写入。这是目标配置缺失，不是证明 setter 不支持。夹具类型、夹持长度、伸出量分别的真实持久化与仿真消费均未完成。
+现有插件 setup_snapshot 只取旧 gripLength；模板关于装夹/伸出量的要求未完全核验。setup_unconfirmed 仍需要基准资料和用户实物确认，不能仅换成SDK回读就解除。
+证据：E\closure\component-grip\、component-od\before-machine.txt、grip-boundary.json。
+
+6. 精加工参数与表面质量：原生写入已有证据，不能承诺Ra
+
+原生 operation_manager GET/REWRITE：op3外圆精车feed -0.30→-0.25（每转模式负号约定）、速度295→290（use_css=true，不能称作RPM）、stock_x0→0.03、stock_z0→0.04；均保存重开。op5内孔精车feed -0.10→-0.09也通过。CSS true→false模式切换持久化；不能保持同一数值就认定加工意义相同。
+X余量径向/直径约定及CSS具体单位到产品字段的完整映射尚未收口，不准直接套用界面“rpm”标签。
+
+刀具半径：tl.crad 与 tl.ltool.radius 单独写入可保存，但二者互不自动同步。实际刀具对象必须 Clone，取 MainInsert，SetCornerRadius(0.45,true)，再将 insert 赋回 tool.MainInsert，IToolSystem.Update(tool)。未赋回的早期测试 Update虽true，实际半径仍0.4，不能称成功。
+正确写回后刀具半径0.4→0.45 mm保存重开。Update 配置 Automate/UpdateAllOperations 并确认本机警告后，slot1对应op1/2/3的两个操作半径同步0.45，七工序dirty=true。Automate仍弹窗，尚未达到无人值守接入要求；超时期间没有重发原命令。
+
+原生 surf_fin_feed=true、feed=1.6 的理论表面质量进给模式可保存重开；官方帮助描述单位microns，并转换每转进给影响刀路，非纯备注。但该理论表面质量量不等于现场Ra，本轮未再生验证派生进给/刀路，不设计Ra→参数映射。
+source_verified=false、process_response=unverified、achieved=false继续保留；finish_requirement_conflict 属于要求来源冲突，SDK能力不会自动解除。
+证据：E\finish-*-reopened.json；E\closure\finish5-feed\、css-mode\、corner-cache\、insert-cache\、tool-object*\、theoretical-finish\；本地帮助 Toolpaths\Turning\Toolpath_Parameters_Lathe.htm。
+
+7. 修改后有效性与现有实现
+
+OPMGR_NCI_FLAG 单独测试可把op3 dirty标为true并持久化，未再生。现有 capabilities.cpp 已有 rewrite→回读→FLAG→dirty检查→REGEN→dirty检查→NCI完整性处理路径，可复用设计；源码存在不等于本次执行了该路径，更不等于验证所有失败恢复。
+毛坯/原点低层写入不自动标脏的事实要求应用显式控制依赖失效。毛坯变化后必须重新评估规划、所需再生/仿真及审核，不能把旧刀路直接放行。
+证据：E\closure\dirty\、tool-object-propagated\、extra.csx；原生源码 capabilities.cpp。
+
+8. 给第二阶段实现者的最小行动
+
+先读取目标仓库AGENTS和project-status，重查远端PR/主线及本地Git状态，保留他人修改。参考工作树 integration-20261027\core-onsite-v2 的 ed510f09c8c4a3da72bc0de50ef75faf2c059a49；不能推定已合入上游。
+重点代码 src/capptron/contracts/algorithm/onsite_v2.py、infrastructure/mastercam/approved_sample.py、原生插件及worker。
+运行包曾为 integration-20261027\runtime\core-synced-venv 的非editable安装；工作树更新不等于运行版本。runtime\config\worker.json、execution-profile.json、runtime\assets\policy.json只按需结构化读取，不整行输出大JSON。
+
+优先顺序：
+（1）第二阶段结果区分“输入有效”“已有配置已确认”“原生写入已验证”“运行版本已接入”“需工程审核”；native_parameters_changed不能由前端记录变更置true。
+（2）追溯毛坯43/38/100与旧150/0/150两个来源，修正读取/显示/兼容判断的来源定义；保留身份和批准流程，不自动覆盖policy或移除cam_stock_update_unsupported。
+（3）零点/偏置先保留setup_change_unsupported，直到完整平面一致更新、持久化和失效处理进入插件/应用并验收。原生能力已证实，不再写成SDK不支持。
+（4）装夹保留确认状态与明确字段映射缺失；不能把旧grip JSON/标量当原生装夹已应用。
+（5）已有进给/速度能力优先复用；新余量/刀具/表面模式仅在单位、身份、传播、交互和副作用补验后开放。
+（6）为当前运行版本补字段级证明：输入/批准版本→工序身份→调用参数/返回值→同会话回读→保存重开回读→失效状态→必要再生/仿真/审核。调查证据不替代应用链路验收。
+
+本轮未完成项目及后续关闭标准见同目录 stage2-followup-issue.txt 和 issue-submission.json。制造余量、夹持可靠性、可达性、实物零点和实际Ra仍需工程/现场依据；allowances_and_clamping=unverified、manufacturing_acceptance=false不因接口成功而解除。
+
+继续工作的授权边界：用户已停止额外接口探测；本交接不授权修改原件、部署或运行完整CAM流程。不得重发未知结果的旧命令；本轮末宿主打开过origin-z测试副本，开始任何操作前重新读取当前工程身份。

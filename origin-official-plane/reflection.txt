@@ -1,0 +1,13 @@
+Mastercam.Database.Operation abstract=True
+Mastercam.Database.MCView ToolPlane
+Mastercam.Database.MCView ConstructionPlane
+Mastercam.Database.MCView WCS
+Boolean Commit(Boolean)
+Boolean Commit()
+Boolean Retrieve()
+Mastercam.Database.MCView abstract=False
+Void .ctor()
+Boolean Commit()
+Boolean Retrieve()
+Mastercam.Math.Point3D get_ViewOrigin()
+Void set_ViewOrigin(Mastercam.Math.Point3D)
